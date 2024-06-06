@@ -5,7 +5,7 @@ import (
 )
 
 // Exported function to call to translate Oracle types to Mongo types
-func Oracle2MongoXlat(oracle_type string) (string, error) {
+func Xlat(oracle_type string) (string, error) {
 	if ok := xlatMap[oracle_type]; ok.ot != "" {
 		return xlatMap[oracle_type].mt, nil
 	}

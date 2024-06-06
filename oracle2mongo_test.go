@@ -31,7 +31,7 @@ func TestXlat(t *testing.T) {
 	// Run test cases
 	for _, tc := range testCases {
 		var r result_t
-		r.mongoType, r.err = Oracle2MongoXlat(tc.oracleType)
+		r.mongoType, r.err = Xlat(tc.oracleType)
 
 		log.Print(r)
 
