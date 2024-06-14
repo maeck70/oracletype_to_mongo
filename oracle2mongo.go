@@ -1,4 +1,4 @@
-package main
+package oracle2mongo
 
 import (
 	"fmt"
@@ -43,6 +43,6 @@ func explode(r num_t) []string {
 	return a
 }
 
-func main() {
-	fmt.Println("There is no main to run, just test with go test .")
-}
+// func main() {
+// 	fmt.Println("There is no main to run, just test with go test .")
+// }

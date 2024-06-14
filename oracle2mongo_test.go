@@ -1,4 +1,4 @@
-package main
+package oracle2mongo
 
 import (
 	"log"

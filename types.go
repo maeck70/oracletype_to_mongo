@@ -1,4 +1,4 @@
-package main
+package oracle2mongo
 
 type lowhigh_t struct {
 	low  int

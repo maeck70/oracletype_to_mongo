@@ -1,4 +1,4 @@
-package main
+package oracle2mongo
 
 // This table defines the mapping between Oracle types and their corresponding Mongo types
 var xlatTable = []xlat_t{
