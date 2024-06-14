@@ -1,7 +1,6 @@
 package oracletype_to_mongo
 
 import (
-	"log"
 	"testing"
 )
 
@@ -36,7 +35,7 @@ func TestXlat(t *testing.T) {
 		var r result_t
 		r.mongoType, r.err = Xlat(tc.oracleType)
 
-		log.Print(r)
+		// log.Print(r)
 
 		if r.mongoType != tc.MongoExpected {
 			t.Errorf("Oracle2MongoXlat(%s) = (%s, %v), expected %s", tc.oracleType, r.mongoType, r.err, tc.MongoExpected)

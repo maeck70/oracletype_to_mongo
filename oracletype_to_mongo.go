@@ -5,7 +5,8 @@ import (
 )
 
 // Exported function to call to translate Oracle types to Mongo types
-func Xlat(oracle_type string) (string, error) {
+// Example oracle_type = "NUMBER[19,5]" returns "decimal"
+func Xlat(oracle_type string) (mongo_type string, err error) {
 	if ok := xlatMap[oracle_type]; ok.ot != "" {
 		return xlatMap[oracle_type].mt, nil
 	}
@@ -42,7 +43,3 @@ func explode(r num_t) []string {
 	}
 	return a
 }
-
-// func main() {
-// 	fmt.Println("There is no main to run, just test with go test .")
-// }
