@@ -1,4 +1,4 @@
-package oracle2mongo
+package oracletype_to_mongo
 
 import (
 	"fmt"
