@@ -16,7 +16,7 @@ var xlatTable = []xlat_t{
 	{"NUMBER", num_t{scale: lowhigh_t{2, 38}, precision: lowhigh_t{0, 0}}, "int"},
 	{"NUMBER", num_t{scale: lowhigh_t{1, 38}, precision: lowhigh_t{1, 38}}, "decimal"},
 	{"NUMBER", num_t{scale: lowhigh_t{0, 0}, precision: lowhigh_t{0, 0}}, "int"},
-	{"FLOAT", num_t{scale: lowhigh_t{0, 0}, precision: lowhigh_t{0, 0}}, "float"},
+	{"FLOAT", num_t{scale: lowhigh_t{0, 0}, precision: lowhigh_t{0, 0}}, "double"},
 	{"DATE", num_t{scale: lowhigh_t{0, 0}, precision: lowhigh_t{0, 0}}, "date"},
 	{"TIMESTAMP(4)", num_t{scale: lowhigh_t{0, 0}, precision: lowhigh_t{0, 0}}, "timestamp"},
 	{"INT64", num_t{scale: lowhigh_t{0, 0}, precision: lowhigh_t{0, 0}}, "long"},
