@@ -1,4 +1,4 @@
-# Oracle Type to Mongo type converter
+# Oracle type to Mongo type converter
 
 This Go package provides a convenient way to translate Oracle data types to their corresponding MongoDB data types. It simplifies the process of mapping data between these two popular database systems.
 
