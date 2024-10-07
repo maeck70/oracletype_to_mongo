@@ -15,9 +15,9 @@ func Xlat(oracle_type string) (mongo_type string, err error) {
 
 var xlatMap = make(map[string]xlat_t)
 
+// Populate the xlat map on startup
+// This explodes the options from the xlatTable across its precision and scale ranges
 func init() {
-	// Populate the xlat map on startup
-	// This explodes the options from the xlatTable across its precision and scale ranges
 	for _, i := range xlatTable {
 		switch i.ot {
 		case "NUMBER":
@@ -30,9 +30,9 @@ func init() {
 	}
 }
 
+// Explode the precision and scale ranges
+// and return a list of strings that represent the options
 func explode(r num_t) []string {
-	// Explode the precision and scale ranges
-	// and return a list of strings that represent the options
 	var a []string
 	for i := r.precision.low; i <= r.precision.high; i++ {
 		for j := r.scale.low; j <= r.scale.high; j++ {
